@@ -19,8 +19,8 @@ def print_report(res, intersect=False):
         F1 Score: {round(f1, 3)}
 
         Statistical Parity
-        Statistical Parity African-Americans: {round(group_metrics["0_sp"], 3)}
-        Statistical Parity Caucasians: {round(group_metrics["1_sp"], 3)}
+        Positive Rate African-Americans: {round(group_metrics["0_sp"], 3)}
+        Positive Rate Caucasians: {round(group_metrics["1_sp"], 3)}
         Statistical Parity Difference (CC - AA): {round(group_metrics["1_sp"] - group_metrics["0_sp"], 3)}
 
         TPR/FPR
@@ -54,10 +54,10 @@ def print_report(res, intersect=False):
         Maximum FPR Difference: {round(maxmins[2], 3)}
 
         Statistical Parity
-        Statistical Parity Female African-Americans: {round(group_metrics["00_sp"], 3)}
-        Statistical Parity Female Caucasians: {round(group_metrics["10_sp"], 3)}
-        Statistical Parity Male African-Americans: {round(group_metrics["01_sp"], 3)}
-        Statistical Parity Male Caucasians: {round(group_metrics["11_sp"], 3)}
+        Positive Rate Female African-Americans: {round(group_metrics["00_sp"], 3)}
+        Positive Rate Female Caucasians: {round(group_metrics["10_sp"], 3)}
+        Positive Rate Male African-Americans: {round(group_metrics["01_sp"], 3)}
+        Positive Rate Male Caucasians: {round(group_metrics["11_sp"], 3)}
         Maximum Statistical Parity Difference: {round(maxmins[0], 3)}
         """
         )
